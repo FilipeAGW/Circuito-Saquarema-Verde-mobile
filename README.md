@@ -41,7 +41,3 @@ node src/server.js
 3. Abra no navegador:
 
 http://localhost:3000
-
-## Informações Adicionais
-
-Projeto desenvolvido para fins acadêmicos com foco na divulgação de informações ambientais e de trilhas da região de Saquarema.
