@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#1f6f54">
+  <title>Admin - Saquarema Verde</title>
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="apple-touch-icon" href="/assets/icon-192.png">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body class="admin-page">
+  <div class="app-shell">
+    <header class="admin-header">
+      <a href="/" class="back-link">Voltar</a>
+      <div>
+        <span class="app-kicker">Painel administrativo</span>
+        <h1>Saquarema Verde</h1>
+      </div>
+    </header>
+
+    <main class="content admin-content">
+      <p class="status-line" id="adminStatus">Entre para cadastrar trilhas, lugares e recomendações.</p>
+
+      <section class="form-panel" id="setupPanel">
+        <h2>Primeiro acesso</h2>
+        <form id="setupForm">
+          <label>
+            Usuário
+            <input id="setupUser" name="username" autocomplete="username" required>
+          </label>
+          <label>
+            Senha
+            <input id="setupPass" name="password" type="password" autocomplete="new-password" minlength="4" required>
+          </label>
+          <button class="primary-button" type="submit">Criar administrador</button>
+        </form>
+      </section>
+
+      <section class="form-panel">
+        <h2>Login</h2>
+        <form id="loginForm">
+          <label>
+            Usuário
+            <input id="loginUser" name="username" autocomplete="username" required>
+          </label>
+          <label>
+            Senha
+            <input id="loginPass" name="password" type="password" autocomplete="current-password" required>
+          </label>
+          <button class="primary-button" type="submit">Entrar</button>
+        </form>
+      </section>
+
+      <section class="form-panel">
+        <h2>Cadastrar trilha</h2>
+        <form id="trailForm" class="locked-form">
+          <label>
+            Nome da trilha
+            <input id="tNome" required>
+          </label>
+          <label>
+            Descrição
+            <textarea id="tDesc" rows="4"></textarea>
+          </label>
+          <label>
+            Dificuldade
+            <select id="tDifficulty">
+              <option>Leve</option>
+              <option>Moderada</option>
+              <option>Difícil</option>
+            </select>
+          </label>
+          <label>
+            Localização
+            <input id="tLocation" placeholder="Ex: Saquarema, RJ">
+          </label>
+          <label>
+            Regras ambientais
+            <textarea id="tRules" rows="4"></textarea>
+          </label>
+          <div class="two-columns">
+            <label>
+              Início
+              <input id="tStart" placeholder="Ex: 01/06">
+            </label>
+            <label>
+              Fim
+              <input id="tEnd" placeholder="Ex: 30/09">
+            </label>
+          </div>
+          <label>
+            Situação
+            <select id="tAtiva">
+              <option value="true">Aberta</option>
+              <option value="false">Fechada</option>
+            </select>
+          </label>
+          <button class="primary-button" type="submit">Cadastrar trilha</button>
+        </form>
+      </section>
+
+      <section class="form-panel">
+        <h2>Cadastrar lugar natural</h2>
+        <form id="placeForm" class="locked-form">
+          <label>
+            Nome
+            <input id="lNome" required>
+          </label>
+          <label>
+            Descrição
+            <textarea id="lDesc" rows="4"></textarea>
+          </label>
+          <label>
+            Regras
+            <textarea id="lRules" rows="4"></textarea>
+          </label>
+          <button class="primary-button" type="submit">Cadastrar lugar</button>
+        </form>
+      </section>
+
+      <section class="form-panel">
+        <h2>Cadastrar recomendação</h2>
+        <form id="recommendationForm" class="locked-form">
+          <label>
+            Título
+            <input id="rTitulo" required>
+          </label>
+          <label>
+            Texto
+            <textarea id="rTexto" rows="4" required></textarea>
+          </label>
+          <button class="primary-button" type="submit">Cadastrar recomendação</button>
+        </form>
+      </section>
+    </main>
+  </div>
+
+  <script src="/admin.js"></script>
+</body>
+</html>

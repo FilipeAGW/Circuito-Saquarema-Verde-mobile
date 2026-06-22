@@ -1,0 +1,61 @@
+{
+  "trails": [
+    {
+      "id": 1,
+      "name": "Circuito Verde de Saquarema",
+      "description": "Percurso introdutorio para consulta de regras, cuidados e pontos naturais do circuito.",
+      "difficulty": "Leve",
+      "location": "Saquarema, RJ",
+      "rules": "Permaneça na trilha, recolha seu lixo, respeite a fauna e evite som alto.",
+      "season_start": "Ano todo",
+      "season_end": "Ano todo",
+      "available": true
+    },
+    {
+      "id": 2,
+      "name": "Trilha de observação ambiental",
+      "description": "Roteiro educativo para observar vegetação, áreas naturais e pontos de atenção ambiental.",
+      "difficulty": "Moderada",
+      "location": "Saquarema, RJ",
+      "rules": "Use calçado adequado, não saia do percurso e não retire plantas ou pedras do local.",
+      "season_start": "A consultar",
+      "season_end": "A consultar",
+      "available": true
+    }
+  ],
+  "lugares": [
+    {
+      "id": 1,
+      "name": "Área natural de visitação",
+      "description": "Ponto de apoio para orientar visitantes antes do passeio.",
+      "rules": "Não descarte resíduos, não retire plantas e siga a sinalização local."
+    },
+    {
+      "id": 2,
+      "name": "Ponto de descanso",
+      "description": "Local sugerido para pausa breve, hidratação e conferência do trajeto.",
+      "rules": "Mantenha o espaço limpo e evite ruídos que incomodem visitantes e fauna."
+    }
+  ],
+  "recomendacoes": [
+    {
+      "id": 1,
+      "title": "Antes de sair",
+      "text": "Leve água, proteção solar, calçado adequado e avise alguém sobre o trajeto.",
+      "trailId": null
+    },
+    {
+      "id": 2,
+      "title": "Durante a visita",
+      "text": "Caminhe apenas por áreas permitidas, mantenha distância de animais e não acenda fogueiras.",
+      "trailId": null
+    },
+    {
+      "id": 3,
+      "title": "Ao voltar",
+      "text": "Confira se nenhum resíduo ficou pelo caminho e registre qualquer dano ambiental encontrado.",
+      "trailId": null
+    }
+  ],
+  "admins": []
+}
