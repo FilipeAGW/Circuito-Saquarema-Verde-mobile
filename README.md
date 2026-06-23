@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Circuito Saquarema Verde
 
 Aplicativo web mobile/PWA para consultar trilhas, lugares naturais e regras ambientais em Saquarema.
