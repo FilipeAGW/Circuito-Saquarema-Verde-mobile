@@ -93,4 +93,3 @@ node src/server.js
 3. Abra no navegador:
 
 http://localhost:3000
->>>>>>> a392381615bc88ab822e090b2026a5bbc3c5ba93
